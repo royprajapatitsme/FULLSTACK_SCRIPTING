@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arjun Kumar - Portfolio & Timetable</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+  <h1>Arjun Kumar</h1>
+  <p>B.Tech CSE (AIML & IoT) | Front-End Developer</p>
+  <button id="theme-toggle">🌙 Dark Mode</button>
+</header>
+
+  <main>
+    <!-- Profile Section -->
+    <section>
+      <figure>
+        <img src="image.jpg" alt="Profile photo of Arjun Kumar" width="200">
+        <figcaption>Arjun Kumar - Front-End Developer</figcaption>
+      </figure>
+    </section>
+
+    <!-- About -->
+    <section>
+      <h2>About Me</h2>
+      <p>
+        I am passionate about front-end development, AIML, and IoT. 
+        I enjoy building clean, responsive web pages and experimenting with new technologies.
+      </p>
+    </section>
+
+    <!-- Education -->
+    <section>
+      <h2>Education</h2>
+      <ul>
+        <li>B.Tech in CSE (AIML & IoT), GLA University, Mathura (2027)</li>
+        <li>12th: B.G.B Braj Education Academy (2023) - 92%</li>
+        <li>10th: B.G.B Braj Education Academy (2021) - 88%</li>
+      </ul>
+    </section>
+
+    <!-- Skills -->
+    <section>
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML, CSS, JavaScript</li>
+        <li>Python, Java</li>
+        <li>AI/ML, IoT, SQL</li>
+        <li>Git, GitHub, VS Code</li>
+      </ul>
+    </section>
+
+    <!-- Contact -->
+    <section>
+      <h2>Contact</h2>
+      <address>
+        📧 Email: <a href="mailto:roy.prajapat.143@gmail.com">roy.prajapat.143@gmail.com</a><br>
+        📱 Phone: +91-6396303191<br>
+        🌐 GitHub: <a href="https://github.com/royprajapatitsme">github.com/royprajapatitsme</a><br>
+        🔗 LinkedIn: <a href="https://linkedin.com/in/arjun-kumar-89343228b/">linkedin.com/in/arjun-kumar</a>
+      </address>
+    </section>
+
+    <!-- Timetable -->
+    <section>
+      <h2>Academic Timetable</h2>
+      <table border="1" cellpadding="8" cellspacing="0">
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>08:00 - 09:00</th>
+            <th>09:00 - 10:00</th>
+            <th>10:00 - 11:00</th>
+            <th>11:00 - 12:00</th>
+            <th>12:00 - 01:00</th>
+            <th>01:00 - 02:00</th>
+            <th>02:00 - 03:00</th>
+            <th>03:00 - 04:00</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Monday</td>
+            <td>Fullstack</td>
+            <td>Deep Learning</td>
+            <td>NLP</td>
+            <td>Basic Course</td>
+            <td>BREAK</td>
+            <td>DAA</td>
+            <td>FREE</td>
+            <td>FREE</td>
+          </tr>
+          <tr>
+            <td>Tuesday</td>
+            <td>Fullstack Lab</td>
+            <td>Fullstack Lab</td>
+            <td>DAA</td>
+            <td>Fullstack</td>
+            <td>BREAK</td>
+            <td>FREE</td>
+            <td>Deep Learning Lab</td>
+            <td>Deep Learning Lab</td>
+          </tr>
+          <tr>
+            <td>Wednesday</td>
+            <td>Deep Learning</td>
+            <td>Fullstack</td>
+            <td>GD & PI</td>
+            <td>FREE</td>
+            <td>BREAK</td>
+            <td>Verbal Aptitude</td>
+            <td>DAA</td>
+            <td>FREE</td>
+          </tr>
+          <tr>
+            <td>Thursday</td>
+            <td>Deep Learning Lab</td>
+            <td>Deep Learning Lab</td>
+            <td>FREE</td>
+            <td>FREE</td>
+            <td>BREAK</td>
+            <td>FREE</td>
+            <td>FREE</td>
+            <td>FREE</td>
+          </tr>
+          <tr>
+            <td>Friday</td>
+            <td>Basic Course</td>
+            <td>NLP</td>
+            <td>DAA Lab</td>
+            <td>DAA Lab</td>
+            <td>BREAK</td>
+            <td>NLP Lab</td>
+            <td>NLP Lab</td>
+            <td>Competetive Programming</td>
+          </tr>
+        </tbody>
+
+        <tfoot>
+          <tr>
+            <td colspan="7">Note: Break is from 12:00 - 1:00 PM daily.</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+    <section>
+      <h2>Contact Me</h2>
+      <form action="contact.php" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required><br><br>
+      <input type="email" name="email" placeholder="Your Email" required><br><br>
+      <textarea name="message" placeholder="Your Message" required></textarea><br><br>
+      <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Arjun Kumar. All Rights Reserved.</p>
+  </footer>
+  <script>
+    const toggleBtn = document.getElementById("theme-toggle");
+    const body = document.body;
+
+    toggleBtn.addEventListener("click", () => {
+      body.classList.toggle("dark");
+      if (body.classList.contains("dark")) {
+        toggleBtn.textContent = "☀️ Light Mode";
+      } else {
+        toggleBtn.textContent = "🌙 Dark Mode";
+      }
+    });
+  </script>
+</body>
+</html>
